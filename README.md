@@ -1,4 +1,4 @@
-# IEBI - Frontend + Backend
+#Frontend + Backend
 
 Estrutura reorganizada para manter frontend e backend no mesmo workspace, pronta para subir no GitHub.
 
