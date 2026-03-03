@@ -1,7 +1,3 @@
-# IEBI Monorepo
-
-Monorepo com frontend e backend no mesmo workspace, organizado para desenvolvimento local e publicacao no GitHub.
-
 ## Visao geral
 
 - Frontend: React + Vite
