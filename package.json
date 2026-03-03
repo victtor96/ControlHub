@@ -1,15 +1,15 @@
 {
-  "name": "iebi-monorepo",
+  "name": "controlhub-monorepo",
   "private": true,
   "version": "1.0.0",
   "workspaces": [
-    "gui_IEBI",
-    "server_IEBI"
+    "gui_ControlHub",
+    "server_ControlHub"
   ],
   "scripts": {
-    "dev:front": "npm --prefix gui_IEBI run dev",
-    "dev:back": "npm --prefix server_IEBI run dev",
-    "build:front": "npm --prefix gui_IEBI run build",
-    "start:back": "npm --prefix server_IEBI run start"
+    "dev:front": "npm --prefix gui_ControlHub run dev",
+    "dev:back": "npm --prefix server_ControlHub run dev",
+    "build:front": "npm --prefix gui_ControlHub run build",
+    "start:back": "npm --prefix server_ControlHub run start"
   }
 }

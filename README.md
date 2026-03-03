@@ -1,3 +1,7 @@
+# ControlHub Monorepo
+
+Monorepo com frontend e backend no mesmo workspace, organizado para desenvolvimento local e publicacao no GitHub.
+
 ## Visao geral
 
 - Frontend: React + Vite
@@ -8,8 +12,8 @@
 
 ```text
 .
-|-- gui_IEBI/      # Aplicacao frontend (React + Vite)
-`-- server_IEBI/   # API backend (Node.js + Express + WebSocket)
+|-- gui_ControlHub/      # Aplicacao frontend (React + Vite)
+`-- server_ControlHub/   # API backend (Node.js + Express + WebSocket)
 ```
 
 ## Pre-requisitos
@@ -22,20 +26,20 @@
 1. Backend:
 
 ```bash
-cp server_IEBI/.env.example server_IEBI/.env
+cp server_ControlHub/.env.example server_ControlHub/.env
 ```
 
 2. Frontend:
 
 ```bash
-cp gui_IEBI/.env.example gui_IEBI/.env
+cp gui_ControlHub/.env.example gui_ControlHub/.env
 ```
 
 ## Instalacao
 
 ```bash
-npm --prefix server_IEBI install
-npm --prefix gui_IEBI install
+npm --prefix server_ControlHub install
+npm --prefix gui_ControlHub install
 ```
 
 ## Execucao local
@@ -88,4 +92,4 @@ git remote add origin <URL_DO_REPOSITORIO>
 git push -u origin main
 ```
 
-Se existir um repositorio Git interno em `gui_IEBI/.git`, remova-o antes do `git add .` para manter um unico repositorio no monorepo.
+Se existir um repositorio Git interno em `gui_ControlHub/.git`, remova-o antes do `git add .` para manter um unico repositorio no monorepo.

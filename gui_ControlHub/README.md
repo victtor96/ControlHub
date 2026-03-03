@@ -1,6 +1,6 @@
-# IEBI Frontend (React + Vite)
+# ControlHub Frontend (React + Vite)
 
-Interface do projeto IEBI, reorganizada por responsabilidade:
+Interface do projeto ControlHub, reorganizada por responsabilidade:
 
 - `src/app`: composicao principal da aplicacao
 - `src/components`: layout, dashboard e componentes UI

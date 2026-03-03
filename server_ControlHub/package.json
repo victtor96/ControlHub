@@ -1,7 +1,7 @@
 {
-  "name": "iebi-server",
+  "name": "controlhub-server",
   "version": "1.0.0",
-  "description": "Backend HTTP + WebSocket do projeto IEBI",
+  "description": "Backend HTTP + WebSocket do projeto ControlHub",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
