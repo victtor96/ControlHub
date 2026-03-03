@@ -1,0 +1,165 @@
+    
+.ptz-card {
+    --primary-color: #afafaf;
+    --secondary-color: #2ecc71;
+    --slider-track-color: #dfe6e9;
+    --slider-progress-color: #6d6c6c;
+    --slider-thumb-color: #afafaf;
+    --slider-thumb-hover-color: #911f1f;
+    --slider-thumb-active-color: #911f1f;
+    --thumb-size: 33px;
+    --thumb-border: 4px;
+    --thumb-border-color: #ffffff;
+    --font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.548);
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ptz-card {
+    transition: background-color 1s ease, color 1s ease;
+}
+.ptz-card:hover {
+    
+    box-shadow: 0 12px 30px rgb(255, 0, 0);
+}
+
+
+.ptz-card h1 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ptz-controls {
+    width: 100%;
+}
+
+.ptz-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ptz-control label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.ptz-control input[type="range"] {
+    width: 80%;
+    height: 20px;
+    background: linear-gradient(
+        to right,
+        var(--slider-progress-color) 0%,
+        var(--slider-progress-color) var(--progress),
+        var(--slider-track-color) var(--progress),
+        var(--slider-track-color) 100%
+    );
+    border-radius: 10px;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+}
+
+.ptz-control input[type="range"]::-webkit-slider-thumb {
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    background: var(--slider-thumb-color);
+    border: var(--thumb-border) solid var(--thumb-border-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    -webkit-appearance: none;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    
+
+}
+
+.ptz-control input[type="range"]:hover::-webkit-slider-thumb {
+    background: var(--slider-thumb-hover-color);
+    transform: scale(1.2);
+}
+
+.ptz-control input[type="range"]:active::-webkit-slider-thumb {
+    background: var(--slider-thumb-active-color);
+    transform: scale(1.3);
+}
+
+.ptz-control span {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .ptz-card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0.3%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        flex-wrap: wrap; /* Permite que os itens se ajustem à largura */
+        justify-content: space-evenly; /* Distribui os itens */
+        gap: 20px; /* Espaço entre os itens */
+        --thumb-size: 35px;
+
+       
+    }
+
+    .ptz-card.transition-enabled {
+    transition: background-color 5s ease;
+    } 
+
+    .ptz-card h1 {
+        font-size: 1.4rem;
+    }
+
+    .ptz-control {
+        display: flex;
+        flex-direction: row; /* Mantém o título, slider e valor na mesma linha */
+        align-items: center; /* Alinha verticalmente os itens */
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .ptz-control label {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--text-color);
+        margin-bottom: 2px;
+        flex: 1; /* Garante que o label ocupe o espaço disponível */
+    }
+    
+    .ptz-control input[type="range"] {
+        width: 85%; /* Ajusta a largura do slider */
+    }
+    
+    .ptz-control span {
+        font-size: 1rem;
+        color: var(--text-color);
+        margin-left: 5px; /* Espaço entre o slider e o valor */
+        font-weight: 500;
+        white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+        
+    }
+
+
+}

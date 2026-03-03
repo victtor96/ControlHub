@@ -1,0 +1,19 @@
+body {
+  background-color: #101015; /* Set a light grey background color */
+  background-size: cover; /* Make the image cover the entire page */
+  transition: background-color 5s ease;
+
+  background-position: center; /* Center the background image */
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Set a default font */
+ 
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body.transition-enabled {
+  transition: background-color 5s ease;
+}

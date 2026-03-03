@@ -1,0 +1,31 @@
+/* src/App.css */
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* Centraliza os itens no container */
+  align-items: flex-start;
+  padding: 20px;
+  
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  
+}
+
+@media (max-width: 1200px) {
+
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  /* Centraliza os itens no container */
+    align-items: flex-start;
+    padding:1px;
+    
+  }
+
+
+}
+/* src/App.css */
+

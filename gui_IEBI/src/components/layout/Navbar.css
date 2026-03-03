@@ -1,0 +1,162 @@
+/* Navbar com animação de gradiente */
+nav {
+  background-size: 300% 300%;
+  transition: transform 0.3s ease, box-shadow 4s ease-in-out, background-color 2s ease-in-out;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar Oculta no Scroll */
+nav.hidden {
+  transform: translateY(-100%);
+}
+
+/* Cores padrão e dinâmicas */
+nav.default-color {
+  background-color: #46428ade;
+}
+
+nav.home-color {
+  background-color: #62608fde;
+
+}
+
+nav.about-color {
+  background-color: #926b66de;
+}
+
+nav.services-color {
+  background-color: #887d5bbd;
+}
+
+/* Menu Responsivo */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+}
+
+.navbar-toggle div {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+nav a.active-link {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  transition: all 3s ease;
+}
+
+/* Para hover em links ativos */
+nav a.active-link:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+nav.home-color a.active-link {
+  background-color: rgba(0, 26, 255, 0.445);
+  color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 26, 255, 0.8);
+  font-weight: bold;
+  border: 2px solid rgba(26, 30, 255, 0.5);
+}
+
+nav.home-color a.active-link:hover {
+  background-color: rgba(0, 26, 255, 0.445);
+  box-shadow: 0 0 15px rgba(0, 4, 255, 0.8);
+}
+
+nav.about-color a.active-link {
+  background-color: rgba(255, 0, 0, 0.445);
+  color: #000000;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+  font-weight: bold;
+  border: 2px solid rgba(255, 26, 26, 0.5);
+}
+
+nav.about-color a.active-link:hover {
+  background-color: rgba(255, 0, 0, 0.445);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+}
+
+nav ul.active {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: inherit;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  z-index: 999;
+  padding: 10px 0;
+}
+
+.navbar-toggle.active div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggle.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.active div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: inherit;
+    padding: 10px 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+}

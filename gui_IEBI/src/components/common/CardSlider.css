@@ -1,0 +1,91 @@
+/* Estilos para o ícone dentro do card4 */
+.card4 .icon {
+    font-size: 2rem;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para o corpo do card4 */
+  .card4 .card-body {
+    margin-top: 20px;
+  }
+  
+  /* Estilos para o switch dentro do card4 */
+  .card4 .switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+  }
+  
+  /* Estilos para o input do switch dentro do card4 */
+  .card4 .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Estilos para o slider dentro do card4 */
+  .card4 .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  /* Estilos para o "thumb" do slider dentro do card4 */
+  .card4 .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  
+  /* Estilos para o estado "checked" do switch */
+  .card4 input:checked + .slider {
+    background-color: #4caf50;
+  }
+  
+  .card4 input:checked + .slider:before {
+    transform: translateX(14px);
+  }
+  
+  /* Estilos para a área de controle PTZ dentro do card4 */
+  .card4 .ptz-control {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  /* Estilos para os rótulos dentro do card4 */
+  .card4 label {
+    font-size: 18px;
+    display: block;
+    margin: 10px 0;
+  }
+  
+  /* Estilos para os sliders dentro do card4 */
+  .card4 input[type="range"] {
+    width: 80%;
+  }
+  
+  /* Estilos para os botões dentro do card4 */
+  .card4 button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  /* Estilos para o container de botões dentro do card4 */
+  .card4 .buttons {
+    margin-top: 20px;
+  }
+  

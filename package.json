@@ -1,0 +1,15 @@
+{
+  "name": "iebi-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "gui_IEBI",
+    "server_IEBI"
+  ],
+  "scripts": {
+    "dev:front": "npm --prefix gui_IEBI run dev",
+    "dev:back": "npm --prefix server_IEBI run dev",
+    "build:front": "npm --prefix gui_IEBI run build",
+    "start:back": "npm --prefix server_IEBI run start"
+  }
+}

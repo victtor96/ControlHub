@@ -1,0 +1,17 @@
+{
+    "1": {
+        "iris": 2,
+        "gain": 7,
+        "contraste": 11
+    },
+    "2": {
+        "iris": 6,
+        "gain": 7,
+        "contraste": 10
+    },
+    "3": {
+        "iris": 9,
+        "gain": 8,
+        "contraste": 10
+    }
+}
