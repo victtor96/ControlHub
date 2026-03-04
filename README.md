@@ -1,4 +1,4 @@
-# ControlHub Monorepo
+# ControlHub
 
 Monorepo com frontend e backend no mesmo workspace, organizado para desenvolvimento local e publicacao no GitHub.
 
@@ -8,13 +8,6 @@ Monorepo com frontend e backend no mesmo workspace, organizado para desenvolvime
 - Backend: Node.js + Express + WebSocket
 - Estrutura unica para facilitar deploy, manutencao e versionamento
 
-## Estrutura do repositorio
-
-```text
-.
-|-- gui_ControlHub/      # Aplicacao frontend (React + Vite)
-`-- server_ControlHub/   # API backend (Node.js + Express + WebSocket)
-```
 
 ## Pre-requisitos
 
