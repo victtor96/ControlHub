@@ -71,18 +71,3 @@ npm run build:front
 ## API e contratos
 
 As rotas e contratos existentes foram preservados na reorganizacao.
-
-## Publicacao no GitHub
-
-No diretorio raiz do projeto:
-
-```bash
-git init
-git add .
-git commit -m "chore: reorganiza front/back e prepara repositorio"
-git branch -M main
-git remote add origin <URL_DO_REPOSITORIO>
-git push -u origin main
-```
-
-Se existir um repositorio Git interno em `gui_ControlHub/.git`, remova-o antes do `git add .` para manter um unico repositorio no monorepo.
